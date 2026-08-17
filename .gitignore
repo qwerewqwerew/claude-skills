@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+
+# 스킬 실행 산출물
+*.pptx
+tokens.raw.json

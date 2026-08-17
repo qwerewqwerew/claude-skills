@@ -1,0 +1,30 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-skills",
+  "description": "한국어 실무용 Claude Code 스킬 모음 — Figma 디자인 토큰 추출과 PPT 템플릿 생성, 실습 매뉴얼 작성.",
+  "owner": {
+    "name": "qwerewqwerew"
+  },
+  "plugins": [
+    {
+      "name": "ppt-kit",
+      "description": "Figma 로컬 사본(.fig/.deck)에서 디자인 토큰을 추출하고, 그 토큰으로 Google Stitch를 거쳐 한국어 PPT 템플릿(16:9 / 5:4)을 조립한다. extract-token → stitch-ppt / stitch-ppt-54 세 스킬이 한 파이프라인으로 물린다.",
+      "author": {
+        "name": "qwerewqwerew"
+      },
+      "source": "./plugins/ppt-kit",
+      "category": "productivity",
+      "homepage": "https://github.com/qwerewqwerew/claude-skills/tree/main/plugins/ppt-kit"
+    },
+    {
+      "name": "hands-on-manual",
+      "description": "학습자가 강사 없이 혼자 읽고 따라 해도 산출물이 남는 자기완결형 한국어 실습 매뉴얼을 작성한다. 손동작 단위 분해와 고정 문체 규칙을 따르며, 산출물은 마크다운이다. 발행 프로필을 두면 그 사이트의 블록 문법에 맞춘 업로드본까지 낸다.",
+      "author": {
+        "name": "qwerewqwerew"
+      },
+      "source": "./plugins/hands-on-manual",
+      "category": "productivity",
+      "homepage": "https://github.com/qwerewqwerew/claude-skills/tree/main/plugins/hands-on-manual"
+    }
+  ]
+}
