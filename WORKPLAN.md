@@ -93,19 +93,35 @@
 검증 중 `marketplace.json`의 `hands-on-manual` 설명이 5단계 변경을 반영하지 못한 것을
 발견해 고쳤다(`b26dc16`).
 
-### 7. 히스토리 정리와 공개 푸시
+### 7. 히스토리 정리와 공개 푸시 (완료)
 
-`0549ff9`(무수정 베이스라인)에 `wordpress-md-block-rules.md`가 그대로 들어 있다.
-HEAD에서 지워도 **히스토리를 푸시하면 공개된다.** 푸시 전에 전 히스토리에서 제거한다.
+**푸시 직전 문제 하나를 발견했다.** 5단계에서 사이트 종속 내용을 HEAD에서 지웠지만,
+무수정 베이스라인 커밋에는 그대로 남아 있었다. 히스토리를 푸시하면 공개된다.
+
+파일 하나만 제거하는 것으로는 부족했다 — 호스팅 구성과 서버 절대경로가
+`SKILL.md` 본문에도 있었고, 초기 커밋들을 손보면 "무수정 이관"이라고 적힌 커밋이
+실제로는 수정된 것이 되어 이력이 사실과 어긋난다.
+
+그래서 **한 커밋으로 정리해서 공개했다.** 단계별 상세 히스토리(7커밋)는
+`~/Desktop/claude-skills.history-backup`에 로컬로 보존돼 있다.
+
+전 히스토리 스캔으로 사이트 고유명 · 호스팅명 · 서버 경로 · 변환기 내부 함수명 ·
+자격증명 패턴 모두 0건을 확인한 뒤 푸시했다.
+
+**공개 주소** — https://github.com/qwerewqwerew/claude-skills
 
 ```
-gh repo create qwerewqwerew/claude-skills --public --source=. --push
 /plugin marketplace add qwerewqwerew/claude-skills
+/plugin install ppt-kit@claude-skills
+/plugin install hands-on-manual@claude-skills
 ```
 
-원격에서 6번과 같은 항목을 한 번 더 확인한다.
+원격 설치 재검증 결과 — 스킬 4개 인식, 하드코딩 경로 0건, 골격 해석 정상,
+출력 위치 `~/.claude/ppt-themes`, `npm ci` 부트스트랩 성공, 디코더 로드 성공,
+pptx 조립 3장 16:9 정상. 검증 후 플러그인·마켓을 제거하고 원본 스킬을 복구했다.
 
 ## 남은 결정
 
 **원본 로컬 스킬 처리** — `~/.claude/skills/`를 남기면 설치한 플러그인 스킬과 이름이 겹친다.
-7단계 통과 후 삭제할지 정한다.
+지금은 원본을 그대로 두고 플러그인은 설치하지 않은 상태다. 플러그인 쪽으로 옮겨 쓸지,
+로컬 원본을 계속 쓸지 정하면 된다.
