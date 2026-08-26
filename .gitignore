@@ -6,3 +6,6 @@ __pycache__/
 # 스킬 실행 산출물
 *.pptx
 tokens.raw.json
+
+# claude.ai 스킬 내려받기 원본(사이트 종속 참조가 들어 있어 커밋하지 않는다)
+*.skill

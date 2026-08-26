@@ -1,6 +1,6 @@
 # claude-skills
 
-한국어 실무용 [Claude Code](https://claude.com/claude-code) 스킬 모음입니다. 플러그인 2개로 배포합니다.
+한국어 실무용 [Claude Code](https://claude.com/claude-code) 스킬 모음입니다. 플러그인 3개로 배포합니다.
 
 ## 설치
 
@@ -8,6 +8,7 @@
 /plugin marketplace add qwerewqwerew/claude-skills
 /plugin install ppt-kit@claude-skills
 /plugin install hands-on-manual@claude-skills
+/plugin install session-to-prompt@claude-skills
 ```
 
 ## 플러그인
@@ -37,6 +38,16 @@ Node 의존성은 `extract-token`이 처음 실행될 때 자동으로 설치합
 기본 산출물은 마크다운 한 벌입니다. 특정 사이트(워드프레스·노션 등)에 올리는 것까지 맡기려면
 **발행 프로필**을 하나 만들어 `~/.claude/manual-profiles/<사이트>.md`에 둡니다. 작성 서식은
 `references/publish-profile-template.md`에 있습니다. 프로필이 없으면 마크다운만 내고 끝냅니다.
+
+### `session-to-prompt`
+
+잘 풀린 작업 하나의 대화 로그를 골라, 다른 사람이 아무 AI 서비스에나 그대로 붙여넣으면 같은
+결과가 나오는 **배포용 프롬프트**로 바꾸는 스킬입니다. 별도 런타임 의존성이 없습니다.
+
+로그에서 최초 지시·중간 수정 지시·통하지 않은 지시·합격 기준·매번 바뀐 값 다섯 가지를 뽑아
+`[역할] [목표] [입력값] [수행 절차] [출력 형식] [제약]` 여섯 블록으로 압축하고, 파일 경로나
+확장 기능 호출처럼 특정 도구에서만 되는 표현을 일반 문장으로 바꿉니다. 산출물은 사용 안내와
+변수표, 확인 항목이 붙은 `prompt-<작업슬러그>-v1.md` 한 벌입니다.
 
 ## 라이선스
 
