@@ -4,7 +4,7 @@
 
 이 저장소의 기존 플러그인 안에 있는 스킬 5개는 해당 위치가 정본입니다. 같은 파일을 별도 skills 폴더에 복제하지 않습니다. catalog.json에서 이름과 정본 위치를 연결합니다.
 
-hanbook은 현재 Windows PC에서 가져온 후보입니다. 다른 PC의 버전과 비교하기 전에는 최종 정본으로 확정하지 않습니다. 원본 내용은 변경하지 않았으며 출처는 provenance/hanbook.json에 기록합니다. 루트와 scripts 폴더의 서로 다른 analyze_pdf.py도 보존했습니다. SKILL.md는 scripts 안의 파일을 지정합니다.
+hanbook은 현재 Windows PC에서 가져온 후보입니다. 다른 PC의 버전과 비교하기 전에는 최종 정본으로 확정하지 않습니다. 가져온 원본의 출처와 당시 해시는 provenance/hanbook.json에 기록하며, 이후 수정은 Git 이력으로 관리합니다. SKILL.md에는 사용자 요청에 따라 작업 종료 후 정리 규칙을 추가했습니다. 루트와 scripts 폴더의 서로 다른 analyze_pdf.py도 보존했습니다. SKILL.md는 scripts 안의 파일을 지정합니다.
 
 앞서 만든 별도 skill-central 폴더는 초기 초안입니다. 이후 관리는 이 claude-skills 저장소에서 합니다.
 

@@ -2,7 +2,7 @@
   "status": "candidate",
   "collected_on": "2026-10-09",
   "source": "User-provided Windows installation: .agents/skills/hanbook",
-  "note": "Not confirmed as the upstream authoring source; compare other devices before selection. Original bytes preserved.",
+  "note": "Import source is not confirmed as the upstream authoring source; compare other devices before selection. sha256 records the original imported bytes, not current repository contents. SKILL.md was subsequently updated with user-requested task cleanup rules; see Git history.",
   "sha256": {
     "SKILL.md": "CF97CCFD20A63F7FA5AA3BF83AB37A1CC3889AA50B78D0FD42F1568151F663F7",
     "analyze_pdf.py": "BFB09B7DEA8F23CF9B013BB55400BEA17E16222DAB52AD0D97B363B6E224D298",
