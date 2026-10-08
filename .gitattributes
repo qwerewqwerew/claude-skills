@@ -1,0 +1,7 @@
+installers/*.sh text eol=lf
+tools/*.py text eol=lf
+tests/*.py text eol=lf
+profiles/*.json text eol=lf
+catalog.json text eol=lf
+provenance/*.json text eol=lf
+skills/hanbook/** -text
