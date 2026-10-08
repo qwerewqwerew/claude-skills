@@ -4,6 +4,8 @@
 
 ## 설치
 
+여러 PC에서 서로 다른 스킬을 선택 설치하려면 [기기별 사본 관리 안내](CENTRAL-MANAGEMENT.md)를 확인합니다. 기존 플러그인 배포 방식은 유지합니다.
+
 ```
 /plugin marketplace add qwerewqwerew/claude-skills
 /plugin install ppt-kit@claude-skills

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "skills": {
+    "extract-token": {
+      "path": "plugins/ppt-kit/skills/extract-token",
+      "status": "selected"
+    },
+    "stitch-ppt": {
+      "path": "plugins/ppt-kit/skills/stitch-ppt",
+      "status": "selected"
+    },
+    "stitch-ppt-54": {
+      "path": "plugins/ppt-kit/skills/stitch-ppt-54",
+      "status": "selected"
+    },
+    "hands-on-manual": {
+      "path": "plugins/hands-on-manual/skills/hands-on-manual",
+      "status": "selected"
+    },
+    "session-to-prompt": {
+      "path": "plugins/session-to-prompt/skills/session-to-prompt",
+      "status": "selected"
+    },
+    "hanbook": {
+      "path": "skills/hanbook",
+      "status": "candidate"
+    }
+  }
+}
